@@ -1,0 +1,13 @@
+### challenge1
+docker-compose up
+http://127.0.0.1:3000/api
+### challenge2
+I am facing an issue of cv2 library inside docker please use python venv
+## Run these commands to setup env
+activate env
+pip3 install -r requirement.txt
+
+## api
+    http://127.0.0.1:5000/image/create
+    http://127.0.0.1:5000/image/frames?depth_min=9000.1&depth_max=9030.45&colors=red&colors=green
+
