@@ -1,0 +1,9 @@
+flask
+psycopg2-binary
+Flask-SQLAlchemy
+pandas
+pillow
+matplotlib
+flask_migrate
+numpy
+scipy
