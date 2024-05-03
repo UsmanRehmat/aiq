@@ -1,13 +1,23 @@
-### challenge1
+## Run
 docker-compose up
-http://127.0.0.1:3000/api
-### challenge2
-I am facing an issue of cv2 library inside docker please use python venv
-## Run these commands to setup env
-activate env
-pip3 install -r requirement.txt
 
-## api
+### challenge1
+http://127.0.0.1:3000/api
+#### api
+you can load data in database using this post call
+Post:
+    curl -X 'POST' \
+    'http://localhost:3000/epa' \
+    -H 'accept: */*' \
+    -d ''
+You can pass state code and pagination parameter in this get call
+Get:
+    http://localhost:3000/epa?stateCode=AK&page=1&pageSize=100
+### challenge2
+
+#### api
+create resized image and stored in database
     http://127.0.0.1:5000/image/create
+get image frames at specific depth using custom colormaps
     http://127.0.0.1:5000/image/frames?depth_min=9000.1&depth_max=9030.45&colors=red&colors=green
 

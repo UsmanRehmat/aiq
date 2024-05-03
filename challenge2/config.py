@@ -11,7 +11,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 DEBUG = True
 
 # Connect to the MYSQL database
-SQLALCHEMY_DATABASE_URI = 'postgresql://aiq:aiq@127.0.0.1:5434/aiq-db'
+SQLALCHEMY_DATABASE_URI = 'postgresql://aiq:aiq@db:5432/aiq-db'
+
 
 # Turn off the Flask-SQLAlchemy event system and warning
 SQLALCHEMY_TRACK_MODIFICATIONS = False
